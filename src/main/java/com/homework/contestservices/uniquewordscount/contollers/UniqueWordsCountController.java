@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UniqueWordsCountController {
-	 @GetMapping(path = {"/fibonacciArray", "/fibonacciArray/{length}"},
+	 @GetMapping(path = "/uniquewordscount",
 	            produces = {APPLICATION_JSON_VALUE})
-	    public @ResponseBody List<BigInteger> getFibonacciArray(HttpServletResponse response, @PathVariable(required = false) Optional<Integer> length) {
+	    public @ResponseBody List<BigInteger> getUniqueWordsCount(HttpServletResponse response, @PathVariable(required = false) Optional<Integer> length) {
 	        try {
 	        		return null;
 	        } catch (IllegalArgumentException ex) {

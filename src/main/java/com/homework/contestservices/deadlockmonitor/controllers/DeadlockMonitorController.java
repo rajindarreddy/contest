@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DeadlockMonitorController {
-	@GetMapping(path="/helloworld")
-	public String helloWorld() {
+	@GetMapping(path="/deadlock")
+	public String deadLock() {
 		return "Hello World";
 	}
 }
